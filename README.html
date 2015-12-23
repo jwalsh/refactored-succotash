@@ -2,6 +2,19 @@
 label { }
 </style>
 
+<h1>GET /user/repos</h1>
+
+<form class="form-signin" method="GET"
+      action="https://api.github.com/user/repos">
+  <label for="client_id"><tt>client_id</tt></label>
+  <input type="text" name="client_id" value="0123456789" />
+
+  <label for="client_secret"><tt>client_secret</tt></label>
+  <input type="text" name="client_secret" value="0123456789" />
+
+  <button type="submit">GET /user/repos</button>
+</form>
+
 
 <h1>GET README.md</h1>
 
@@ -13,10 +26,11 @@ label { }
   <label for="client_secret"><tt>client_secret</tt></label>
   <input type="text" name="client_secret" value="0123456789" />
 
-  <button class="btn btn-lg btn-primary btn-block" type="submit">GET README.md</button>
+  <button type="submit">GET README.md</button>
 </form>
 
-<h1>PUT README.md</h1>
+
+<h1>PUT README1.md</h1>
 
 <form class="form-signin" method="PUT"
       action="https://api.github.com/repos/civic-hub-poc/boston-poc/contents/README1.md">
@@ -35,5 +49,5 @@ label { }
   <label for="shaw"><tt>sha</tt></label>
   <input type="text" name="sha" value="" />
 
-  <button class="btn btn-lg btn-primary btn-block" type="submit">PUT README.md</button>
+  <button type="submit">PUT README.md</button>
 </form>
