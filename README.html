@@ -1,3 +1,8 @@
+<style>
+label { }
+</style>
+
+
 <h1>GET README.md</h1>
 
 <form class="form-signin" method="GET"
@@ -9,4 +14,26 @@
   <input type="text" name="client_secret" value="0123456789" />
 
   <button class="btn btn-lg btn-primary btn-block" type="submit">GET README.md</button>
+</form>
+
+<h1>PUT README.md</h1>
+
+<form class="form-signin" method="PUT"
+      action="https://api.github.com/repos/civic-hub-poc/boston-poc/contents/README1.md">
+
+  <label for="path"><tt>path</tt></label>
+  <input type="text" name="path" value="README1.md"
+         placeholder="The content path." />
+
+  <label for="message"><tt>message</tt></label>
+  <input type="text" name="message" value="Commit message"
+         placeholder="The commit message." />
+
+  <label for="content"><tt>content</tt></label>
+  <input type="text" name="content" value="Form upload content" />
+
+  <label for="shaw"><tt>sha</tt></label>
+  <input type="text" name="sha" value="" />
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">PUT README.md</button>
 </form>
